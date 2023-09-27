@@ -7,5 +7,3 @@
 # 3. School Projects 
 
 
-# vlhandfo.github.io
-# vlhandfo.github.io
