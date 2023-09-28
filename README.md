@@ -2,16 +2,11 @@
 
 This website/repository is still under development.
 
-## Data Analysis Projects
+## Data Science Projects
 
-- `titanic`
-	- The classic project; Exploratory data analysis (EDA) to find most informative features to survival for passengers on the Titanic.
-- `alignment`
-	- Implementation of the Minimum Edit algorithm.
-	- Alignment can be used for spell check or in bioinformatics for sequence analysis.
-	- TODO: make a sample of the use cases.
-- `visualization`
-	- TODO: Data visualizations with R and Python
+Personal projects from outside of school.
+
+- Keywords: Data Analysis, Machine Learning, Data Visualization, Pandas, Python, R, MatPlotLib
 
 ## Leetcode 
 
