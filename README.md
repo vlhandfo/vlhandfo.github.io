@@ -6,7 +6,7 @@ This website/repository is still under development.
 
 Personal projects from outside of school.
 
-- Keywords: Data Analysis, Machine Learning, Data Visualization, Pandas, Python, R, MatPlotLib
+- Keywords: Data Analysis, Machine Learning, Data Visualization, Automation, Pandas, Python, R, MatPlotLib
 
 ## Leetcode 
 
