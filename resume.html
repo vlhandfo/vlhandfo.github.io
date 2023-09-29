@@ -9,7 +9,7 @@
             background-color: lightblue;
         }
         main, footer{
-            max-width:800px;
+            max-width:1300px;
             margin: 0 auto;
             padding: 0, 15px;
         }
@@ -17,11 +17,22 @@
             text-align: right;
         }
         h2{
-            padding-top: 20px;
+            padding-top: 15px;
         }
-        h4 span{
+        h6 span{
            font-style: italic; 
            color: gray;
+        }
+        #container {
+            column-count: 2;
+            column-gap: 50px;
+            -webkit-column-count: 2;
+            -webkit-column-gap: 50px;
+            -moz-column-count: 2;
+            -moz-column-gap: 50px;
+        }
+        .school, .work {
+            padding: 5px;
         }
     </style>
   </head>
@@ -47,7 +58,6 @@
     <header>
         <!-- <img src="images/nerd.jpeg" style="border-radius: 150px;"> -->
         <br>
-        <h2>SITE IS STILL UNDER CONSTRUCTION</h2>
         <h1>Victoria Handford</h1>
         <h2>Data Science and Natural Language Processing</h2>
         <br>
@@ -55,71 +65,88 @@
 
     <!--MAIN-->
     <main>
-        <!--
-            |--------| |----------|
-            |  Work  | |          |
-            |--------| |  School  |
-            | Skills | |          |
-            |--------| |----------|
-        -->
-
-    <!--Skills-->
-    <h2>Skills</h2>
-    <ul>
-        <li>Programming: Python, Java, Markdown, HTML/CSS</li>
-        <li>Python Frameworks: *Pytorch, *Trax, *SciKitlearn, Pandas, MatPlotLib, NumPy</li>
-        <li>Proficient in Jupyter Notebook</li>
-        <li>Languages: English (Native), Norwegian (Proficient), German (Intermediate)</li>
-    </ul>
-
-      <!--Work Experience-->
-      <h2>Work Experience</h2>
-        <div class="work">
-            <h3>Language Technology Teaching Assistent, <span>IN1140</span></h3>
-            <h4>University of Oslo, <span>August 2023 - December 2023<span></h4>
-            <p> Description of Trix project</p>
-        </div>
-        <div class="work">
-            <h3>Trix Development Project, <span>IN1000</span></h3>
-            <h4>University of Oslo, <span>January 2023 - June 2023<span></h4>
-            <p> Description of Trix project</p>
-        </div>
-        <div class="work">
-            <h3>Object-Oriented Programming Teaching Assistent, <span>IN1000</span></h3>
-            <h4>University of Oslo, <span>August 2023 - June 2023<span></h4>
-            <p> Description of Trix project</p>
-        </div>
-
-
-        <!--Education-->
-        <h2>Education</h2>
+    <div id="container">
+        <div id="inner-container">
+            <!--Education-->
+            <h2>Education</h2>
             <div class="school">
-                <h3>Master's Degree <span>Informatics: Language Technology</span></h3>
-                <h4>University of Oslo, <span>August 2023 - <i>anticipated</i> June 2025<span></h4>
+                <h5>MSc Informatics: Language Technology</h5>
+                <h6>University of Oslo, <span style="padding-bottom: 5;">August 2023 - <i>anticipated</i> June 2025<span></h6>
             </div>
             <div class="school">
-                <h3>Natural Language Processing Specialization</span></h3>
-                <h4>Coursera, <span>July 2023<span></h4>
+                <h5>BSc Informatics: Language Technology</h5>
+                <h6>University of Oslo, <span>August 2020 - June 2023<span></h6>
+                  <ul>
+                    <li> Studies in informatics, programming, machine learning, and linguistics, with a focus in English </li>
+                  </ul> 
+            </div>
+            <div class="school">
+                <h5>BA Music and German</h5>
+                <h6>University of Nebraska - Lincoln, <span>August 2015 - May 2019<span></h6>
                 <ul>
-                    <li>NLP with Classification and Vector Spaces</li>
-                    <li>NLP with Probabilistic Models</li>
-                    <li>NLP with Sequence Models</li>
-                    <li>NLP with Attention Models</li>
+                    <li> Studies in classical voice performance, music history, and music theory </li>
+                    <li> Studies in German language, literature, and culture</li>
+                </ul> 
+            </div>
+        </div>
+        <div id="inner-container">
+            <!--Skills-->
+            <h2>Skills</h2>
+            <ul>
+                <li>Attention to detail, creative thinking, and perseverance</li>
+                <li> <b>Python</b> </li>
+                <ul>
+                    <li>including NumPy (computation), BeautifulSoup (webscraping), and pathlib (directory and file manipulation)
+                    <li><b>data analysis and visualization</b> using <b>Pandas</b>, MatPlotLib, and NLTK.</li>
+                    <li><b>machine learning</b> using SciKitLearn</li>
+                </ul>
+                <li><b>R</b> for statistical and data analysis and visualization</li>
+                <li>General <b>Java</b> programming</li>
+                <li>English (Native), Norwegian (Advanced), German (Intermediate)</li>
+            </ul>
+        </div>
+        <div id="inner-container">
+            <h2>Certifications</h2>
+            <div class="school">
+                <h5>Natural Language Processing Specialization</span></h5>
+                <h6>Coursera, <span>July 2023<span></h6>
+                <p>Specialization in NLP with classification and vector spaces, probabilistic models, sequence models, and attention models.</p>
+            </div>
+        </div>
+        <div id="inner-container">
+            <!--Work Experience-->
+            <h2>Work Experience</h2>
+            <div class="work">
+                <h5>Language Technology Teaching Assistent, <span>IN1140</span></h5>
+                <h6>University of Oslo, <span>August 2023 - current<span></h6>
+                <ul>
+                    <li> Held seminars for the students </li>
+                    <li> Grade obligatory assignments and provided feedback </li>
+                    <li> Answered student questions and helped them understand the curriculum </li>
                 </ul>
             </div>
-            <div class="school">
-                <h3>Bachelor's Degree <span>Informatics: Language Technology</span></h3>
-                <h4>University of Oslo, <span>August 2020 - June 2023<span></h4>
+            <div class="work">
+                <h5>Trix Development Project, <span>IN1000</span></h5>
+                <h6>University of Oslo, <span>January 2023 - June 2023<span></h6>
+                    <p> Project for the development and improvement of Trix problems for students taking IN1000: <i>Introduksjon til objektorientert programmering</i></p>
             </div>
-            <div class="school">
-                <h3>Bachelor's Degree <span>Music and German</span></h3>
-                <h4>University of Nebraska - Lincoln, <span>August 2015 - May 2019<span></h4>
+            <div class="work">
+                <h5>Object-Oriented Programming Teaching Assistent, <span>IN1000</span></h5>
+                <h6>University of Oslo, <span>August 2023 - June 2023<span></h6>
+                <ul>
+                    <li> Held seminars for the students </li>
+                    <li> Grade obligatory assignments and provided feedback </li>
+                    <li> Answered questions and helped students when needed </li>
+                </ul>
             </div>
+        </div>            
+    </div>
     </main>
 
     <!--Footer-->
     <footer>
-        <p>Last edited: 7. July 2023</p>
+        <br>
+        <p>Last edited: 29. September 2023</p>
     </footer>
 </body>
 </html>
