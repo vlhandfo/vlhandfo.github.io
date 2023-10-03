@@ -65,6 +65,4 @@ if __name__ == "__main__":
 	df = pd.DataFrame(columns=cols)
 	df = parse_data(df, table)
 
-
-
 	df.to_csv(output_file)
